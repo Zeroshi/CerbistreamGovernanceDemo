@@ -1,0 +1,19 @@
+﻿{
+  "EnforcementMode": "Strict",
+  "LoggingProfiles": {
+    "Orders": {
+      "RequireTopic": true,
+      "AllowedTopics": [ "Orders", "Users" ],
+      "FieldSeverities": {
+        "userId": "Required",
+        "email": "Required",
+        "password": "Forbidden"
+      },
+      "EncryptionSettings": {
+        "Mode": "AES",
+        "FieldSeverity": "Required"
+      },
+      "AllowRelax": true
+    }
+  }
+}
